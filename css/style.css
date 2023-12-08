@@ -1,0 +1,245 @@
+
+*{
+    font-family: 'poppins',sans-serif;
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box ;
+    scroll-padding-top: 2rem;
+    text-transform: capitalize;
+  }
+  :root {
+    --main-color:rgb(238, 237, 237);
+    --main-color-1:orange;
+    --main-color-2: rgb(190, 187, 187);
+    --blu:rgba(0, 0, 0, 0.61);
+  }
+  html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--main-color-1);
+}
+  ::selection{
+    background-color: var(--main-color-1);
+    color: var(--main-color);
+  }
+
+  body {
+    opacity: 1;
+  }
+  nav{
+    background-color: rgb(242, 248, 248);
+    
+  }
+  header{
+    position: fixed !important;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    background-color:var(--main-color);
+    z-index: 100;
+  }
+  .div{
+    position: absolute;
+    top: 2.7rem;
+    right: 2rem;
+  }
+  .up_mune {
+    position: absolute !important;
+    background-color: var(--main-color);
+    width: 100%;
+    height: 4rem;
+  }
+  .log_1 {
+    height: 100%;
+    width: 4rem;
+    z-index: 1;
+
+  }
+  a{
+    text-decoration: none;
+    color:rgb(2, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .sn{
+    position: absolute !important;
+    font-size: 1.7rem;
+     top:1.3rem;
+     margin-left: 0.4rem;
+     text-decoration: underline;
+     text-decoration-color:var(--main-color-1) ;
+     color: var(--main-color-1);
+  }
+  .sn span{
+   color: black;
+  }
+  .search-box{
+    position: absolute;
+    align-items: center;
+    top:1.2rem;
+    right: 35rem;
+  }
+  .search-box input{
+    outline: none;
+    padding: 8px 15px;
+    width: 15rem;
+    background-color: var(--main-color-2);
+    font-weight: 400;
+    font-size: 0.895rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4rem;
+    column-gap: 0.7rem;
+  }
+ .bx-search{
+  position: absolute !important;
+  top: -0.5rem;
+  width: 35px;
+  height: 50px;
+  right: -2.2rem;
+
+ }
+ .bx-search g{
+  stroke: var(--main-color-1);
+  stroke-width:2.2px;
+ }
+.nav {
+    position: fixed;
+    top:8.05rem;
+    left:0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+    background-color: var(--main-color);
+    transform: translateY(-10%);
+    height: 100%;
+    width: 10%;
+    
+  }
+  .nav ul{
+    list-style: none;
+  } 
+  .nav ul li{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.4rem;
+    margin-top: 3rem
+    
+  }
+  .nav ul li:hover,
+  .nav_active{
+    transition: 0.3s all linear; 
+    transform: scale(1.1); 
+    color: var(--main-color-1);
+  }
+  .nav ul li:hover a,
+  .nav_active a{
+    transition: 0.3s all linear; 
+    transform: scale(1.3); 
+    color: var(--main-color-1);
+  }
+  .ico1 {
+    width: 30px;
+    height: 30px;
+  } 
+  .ico{
+    fill:var(--main-color-1);
+  }
+
+  .container{
+    background-color: var(--main-color-2);
+    padding: 0.5rem;
+    color: black;
+    font-weight: 500;
+    position: absolute !important;
+    left: 9.2rem;
+    top:4.5rem;
+    min-height: 78vh;
+    width: 88.8%;
+    word-wrap: break-word;
+    letter-spacing: 0.5px;
+  }
+  h1{
+    position: absolute;
+    background-color: var(--main-color-2);
+    padding: 0.5rem;
+    color: black;
+    font-weight: 500;
+    left: 9rem;
+    top:38rem;
+    width: 88.8%;
+  }
+  #story{
+    top:35.5rem;
+    opacity: 0;
+  }
+
+  .top_story{
+    position: absolute !important;
+    width: 88%;
+    height: 75vh;
+    top:42rem;
+
+  }
+  .new_story{
+    top:75rem;
+  }
+  .new_story_1{
+    top:79rem;
+    position: absolute !important;
+    width: 88%;
+    height: 75vh;
+  }
+  .section{
+    position: absolute !important;
+    width: 88%;
+    height: 70vh;
+  }
+  .cont{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--main-color);
+  }
+  #g{
+    margin-left: 50%;
+  }
+  .img-swiper{
+    height: 100%;
+    width: 50%;
+  }
+  #id{
+    background-color: blue;
+  }
+
+  .cont .story_sub_info{
+    width: 50%;
+    height: 10rem;
+    bottom: 0rem;
+    padding: 1rem;
+    background-color: var(--blu);
+    position: absolute !important;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+  }
+  .link-swiper{
+    color: var(--main-color-1);
+    padding: 0.5rem;
+  }
+  .link-swiper:hover{
+    text-decoration: underline;
+    text-decoration-color:var(--main-color) ;
+    padding: 0.5rem;
+    transition: 0.5s all linear; 
+  }
+ .top_story{
+  color:var(--main-color-1);
+ }
+
